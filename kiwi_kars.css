@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@300&display=swap');
+font-family: 'Noto Serif', serif;
+font-family: 'Roboto', sans-serif;
+
+
+main_content {
+	width: 70%;
+	align-content: center;
+}
+
+header {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  width: 60%;
+  margin: auto;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 15px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin: 2vw;
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  position:relative;
+  padding: 2vw; 
+  background-color: #f1f1f1;
+  height: 20vw;
+  font-size: 80%;
+  display: inline-block;
+}
+
+.carCard img{
+	height: 8vw;
+	float: center;
+}
+
+.price {
+  color: grey;
+  font-size: 100%;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 90%;
+  font-size: 70%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
+footer {
+	background-color: #96d3e2;
+	height: 100px;
+	color: darkblue;
+	font-size: 100%;
+	text-align: center;
+	padding: 20px, 15px;
+	font-family: 'Noto Serif', serif;
+	
+}
+
+footer p{
+	float: center;
+	text-align: center;
+}
+
+
+.submitButton{
+	color: white;
+	text-transfrom: uppercase;
+	text-decoration: none;
+	background: #ed3330;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	boarder: none;
+	transition: all 0.4s ease 0s;
+	font-family: 'Roboto Condensed', sans-serif;
+
+
+
+
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		width: 50%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	body {
+		margin: 0px;
+		height: 5vw;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.collumn {
+		align-content: center;
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	body {
+		width: 100%;
+	}
+	header h1 {
+		text-align: right;
+		font-size: 100%;
+	}
+	.logo {
+		float: left;
+		margin: 0px;
+		height: 100px;
+		width: 80px;
+	}
+}
